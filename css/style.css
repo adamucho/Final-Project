@@ -35,18 +35,62 @@
 
 #home_page{
 	font-family: 'Montserrat', sans-serif;
-	text-align: center;
+/*  width: 1024px;*/
+  margin: 0;
+  padding: 0;
+
+
+
 }
 
-#nav_bar{
+#logo h1{
+  font-size: 35px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display:inline-block;
+  float:left;
+
+}
+
+.navigation-container{
+  width: 1500px;
+  margin: 0 auto;
+  height: 70px;
+  padding-top: 40px;
+
+
+
+}
+
+.navigation-bar{
 	background-color: #262626;
-	height: 100px;
+  height: 100px;
+  width: 100%;
+
+
 }
 
-#lumenus_project{
+.navigation{
+  float:right;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 0px 10px 0px 10px;
+  letter-spacing: 2px;
+
+
+/
+}
+
+#projects{
+  text-align: center;
+
+}
+.lumenus_project{
 	background-color: orange;
 }
-#la_votes{
+.la_votes{
 	background-color: green;
 }
 /*#muji-hero{
