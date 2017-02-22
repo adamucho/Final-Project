@@ -35,12 +35,10 @@
 
 #home_page{
 	font-family: 'Montserrat', sans-serif;
-/*  width: 1024px;*/
+
   margin: 0;
   padding: 0;
-
-
-
+  background-color: orange;
 }
 
 #logo h1{
@@ -50,7 +48,6 @@
   letter-spacing: 2px;
   display:inline-block;
   float:left;
-
 }
 
 .navigation-container{
@@ -58,17 +55,12 @@
   margin: 0 auto;
   height: 70px;
   padding-top: 40px;
-
-
-
 }
 
 .navigation-bar{
 	background-color: #262626;
   height: 100px;
   width: 100%;
-
-
 }
 
 .navigation{
@@ -78,28 +70,39 @@
   color: white;
   padding: 0px 10px 0px 10px;
   letter-spacing: 2px;
-
-
-/
 }
 
-#projects{
-  text-align: center;
+/*----------------------------------------lumenus----------------------------------------*/
+
+#slide1 {
+  background-image: url('../images/LumenusHomePage_1.png');
+}
+
+#slide2 {
+  background-image: url('../images/LumenusProductPage_2.png');
+}
+
+#slide3 {
+  background-image: url('../images/LumenusHowPage_3.png');
+}
+
+#lumenus_project_carousel {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 683px;
+  height: 384px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 
 }
-.lumenus_project{
-	background-color: orange;
-}
-.la_votes{
-	background-color: green;
-}
-/*#muji-hero{
-	text-align: center;
-	height: 900px;
 
-	background-image: url("../images/muji_hero.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
-}*/
+.macbook{
+  position: absolute;
+  height: inherit;  
+}
+ .macbook img{
+  height: inherit;
 
+
+ }
