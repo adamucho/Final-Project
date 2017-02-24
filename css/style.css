@@ -41,20 +41,35 @@
   background-color: orange;
 }
 
+#logo{
+  display: inline-block;
+  position: relative;
+  transform: translateY(50%);
+}
+
 #logo h1{
   font-size: 35px;
   color: white;
   font-weight: 700;
   letter-spacing: 2px;
-  display:inline-block;
   float:left;
+
+}
+
+#logo h2{
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 5px;
+  float:left;
+  clear: left;
 }
 
 .navigation-container{
   width: 1000px;
   margin: 0 auto;
-  height: 70px;
-  padding-top: 40px;
+  height: 80px;
+
 }
 
 .navigation-bar{
@@ -65,10 +80,11 @@
 
 .navigation{
   float:right;
-  display: inline-block;
+/*  position: relative;*/
   text-decoration: none;
+  display: inline-block;
   color: white;
-  padding: 0px 10px 0px 10px;
+  padding: 20px 10px 0px 10px;
   letter-spacing: 2px;
 }
 
@@ -95,7 +111,7 @@
 
 #slide3 {
   background-image: url('../images/LumenusHowPage_3.png');
-    height: 100%;
+  height: 100%;
   width:100%;
 }
 
@@ -103,8 +119,6 @@
   overflow: hidden;
   margin-top:100px;
   white-space: nowrap;
-/*  width: 683px;
-  height: 384px;*/
 
   width:1016px;
   height:585px;
