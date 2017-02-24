@@ -36,8 +36,8 @@
 #home_page{
 	font-family: 'Montserrat', sans-serif;
 
-  margin: 0;
-  padding: 0;
+/*  margin: 0;
+  padding: 0;*/
   background-color: orange;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .navigation-container{
-  width: 1500px;
+  width: 1000px;
   margin: 0 auto;
   height: 70px;
   padding-top: 40px;
@@ -74,27 +74,43 @@
 
 /*----------------------------------------lumenus----------------------------------------*/
 
+.slide-image{
+  background-position:50% 36px;
+  display: inline-block;
+  background-repeat:no-repeat;
+}
+
 #slide1 {
   background-image: url('../images/LumenusHomePage_1.png');
+  height: 100%;
+  width:100%;
+
 }
 
 #slide2 {
   background-image: url('../images/LumenusProductPage_2.png');
+  height: 100%;
+  width:100%;
 }
 
 #slide3 {
   background-image: url('../images/LumenusHowPage_3.png');
+    height: 100%;
+  width:100%;
 }
 
 #lumenus_project_carousel {
   overflow: hidden;
+  margin-top:100px;
   white-space: nowrap;
-  width: 683px;
-  height: 384px;
+/*  width: 683px;
+  height: 384px;*/
+
+  width:1016px;
+  height:585px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-
 }
 
 .macbook{
@@ -104,5 +120,4 @@
  .macbook img{
   height: inherit;
 
-
- }
+}
