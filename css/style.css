@@ -1,12 +1,16 @@
-/*Font Styles*/
-/*<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">*/
+/* Box Model Hack */
+
 * {
-  -moz-box-sizing: border-box; /* Firexfox */
-  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-  box-sizing: border-box; /* IE */
+  -moz-box-sizing: border-box;
+  /* Firexfox */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box;
+  /* IE */
 }
 
 /* Clear fix hack */
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -15,26 +19,23 @@
   line-height: 0;
   height: 0;
 }
-
 .clear {
   clear: both;
 }
-
 .alignright {
   float: right;
-  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+  padding: 0 0 10px 10px;
+  /* note the padding around a right floated image */
 }
-
 .alignleft {
   float: left;
-  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+  padding: 0 10px 10px 0;
+  /* note the padding around a left floated image */
 }
-/*
-************************************************************************/
-
+/*--------------------------------Navigation---------------------------------*/
 
 #home_page{
-	font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
 /*  margin: 0;
   padding: 0;*/
@@ -73,7 +74,7 @@
 }
 
 .navigation-bar{
-	background-color: #262626;
+  background-color: #262626;
   height: 100px;
   width: 100%;
 }
@@ -88,50 +89,68 @@
   letter-spacing: 2px;
 }
 
-/*----------------------------------------lumenus----------------------------------------*/
-
-.slide-image{
-  background-position:50% 36px;
-  display: inline-block;
-  background-repeat:no-repeat;
-}
+/*------------------------Lumenus-----------------------------------------*/
 
 #slide1 {
   background-image: url('../images/LumenusHomePage_1.png');
-  height: 100%;
-  width:100%;
-
 }
 
 #slide2 {
   background-image: url('../images/LumenusProductPage_2.png');
-  height: 100%;
-  width:100%;
 }
 
 #slide3 {
   background-image: url('../images/LumenusHowPage_3.png');
-  height: 100%;
-  width:100%;
 }
 
-#lumenus_project_carousel {
-  overflow: hidden;
-  margin-top:100px;
-  white-space: nowrap;
+#slide4 {
+  background-image: url('../images/LumenusPOSPage_4.png');
+}
 
-  width:1016px;
-  height:585px;
+
+
+#carousel {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 683px;
+  height: 384px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+
 }
+
+.slide-image {
+  width: 683px;
+  height: 384px;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+}
+
 
 .macbook{
   position: absolute;
   height: inherit;  
+
+
+
 }
  .macbook img{
   height: inherit;
 
+
+ }
+
+
+/*@media (max-device-width: 1024px) {
+  .arrow {
+    width: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    width: 10%;
+  }*/
 }

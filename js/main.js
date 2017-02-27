@@ -5,11 +5,11 @@ $(document).ready(function(){
   
 
   function rotateSlides(){
-    var $firstSlide = $('#lumenus_project_carousel').find('div:first');
+    var $firstSlide = $('#carousel').find('div:first');
     var width = $firstSlide.width();
 
     $firstSlide.animate({marginLeft: -width}, 1000, function(){
-      var $lastSlide = $('lumenus_project_carousel').find('div:last')
+      var $lastSlide = $('#carousel').find('div:last')
       $lastSlide.after($firstSlide);
       $firstSlide.css({marginLeft: 0})
     })
