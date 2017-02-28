@@ -107,41 +107,59 @@
   background-image: url('../images/LumenusPOSPage_4.png');
 }
 
+#slide5 {
+  background-image: url('../images/LumenusReviewPage_5.png');
+}
+
+
 
 
 #carousel {
+
   overflow: hidden;
   white-space: nowrap;
-/*  width: 1500px;
-  height: 400px;*/
+  width: 1500px;
+  height: 600px;
+
+
 /*  ------------------------original size-----------*/
-  width: 683px;
-  height: 384px;
+/*  width: 683px;
+  height: 484px;*/
 /*  -----------------------------------------------*/
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+/*  position: relative;*/
+right: 50%;
+  transform: translateX(12%);
+  padding-top: 40px;
 
 }
 
 .slide-image {
-  width: 683px;
-  height: 384px;
+  /*  ------------------------original size-----------*/
+/*  width: 683px;
+  height: 384px;*/
+  /*  -----------------------------------------------*/
+  width: 559px;
+  height: 346px;
+/*  max-width:50%*/
   background-position: center;
   background-size: cover;
   display: inline-block;
+  margin-top: 51px;
 }
 
 
 .macbook{
+
   position: absolute;
-  height: inherit;  
 
-
+  right: 50%;
+  transform: translateX(50%);
+/*  height: inherit;  */
 
 }
  .macbook img{
-  height: inherit;
+
+/*  height: inherit;*/
 
 
  }
