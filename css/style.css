@@ -112,8 +112,12 @@
 #carousel {
   overflow: hidden;
   white-space: nowrap;
+/*  width: 1500px;
+  height: 400px;*/
+/*  ------------------------original size-----------*/
   width: 683px;
   height: 384px;
+/*  -----------------------------------------------*/
   position: relative;
   left: 50%;
   transform: translateX(-50%);
