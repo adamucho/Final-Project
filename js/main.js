@@ -1,23 +1,20 @@
-$(document).ready(function(){
+var carousel = $(".carousel"),
+    currdeg  = 0;
 
-  var interval = window.setInterval(rotateSlides, 3000)
+$(".next").on("click", { d: "n" }, rotate);
+$(".prev").on("click", { d: "p" }, rotate);
 
-  
-
-  function rotateSlides(){
-    var $firstSlide = $('#carousel').find('div:first');
-    var width = $firstSlide.width();
-
-    $firstSlide.animate({marginLeft: -width}, 1000, function(){
-      var $lastSlide = $('#carousel').find('div:last')
-      $lastSlide.after($firstSlide);
-      $firstSlide.css({marginLeft: 0})
-    })
-
-
-
+function rotate(e){
+  if(e.data.d=="n"){
+    currdeg = currdeg - 60;
   }
-
-})
-
-
+  if(e.data.d=="p"){
+    currdeg = currdeg + 60;
+  }
+  carousel.css({
+    "-webkit-transform": "rotateY("+currdeg+"deg)",
+    "-moz-transform": "rotateY("+currdeg+"deg)",
+    "-o-transform": "rotateY("+currdeg+"deg)",
+    "transform": "rotateY("+currdeg+"deg)"
+  });
+}

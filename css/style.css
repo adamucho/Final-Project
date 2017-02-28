@@ -91,88 +91,90 @@
 
 /*------------------------Lumenus-----------------------------------------*/
 
-#slide1 {
-  background-image: url('../images/LumenusHomePage_1.png');
-}
-
-#slide2 {
-  background-image: url('../images/LumenusProductPage_2.png');
-}
-
-#slide3 {
-  background-image: url('../images/LumenusHowPage_3.png');
-}
-
-#slide4 {
-  background-image: url('../images/LumenusPOSPage_4.png');
-}
-
-#slide5 {
-  background-image: url('../images/LumenusReviewPage_5.png');
-}
-
-
-
-
-#carousel {
-
-  overflow: hidden;
-  white-space: nowrap;
-  width: 1500px;
-  height: 600px;
-
-
-/*  ------------------------original size-----------*/
-/*  width: 683px;
-  height: 484px;*/
-/*  -----------------------------------------------*/
-/*  position: relative;*/
-right: 50%;
-  transform: translateX(12%);
-  padding-top: 40px;
-
-}
-
-.slide-image {
-  /*  ------------------------original size-----------*/
-/*  width: 683px;
-  height: 384px;*/
-  /*  -----------------------------------------------*/
+.container {
+  margin: 0 auto;
+/*  width: 250px;
+  height: 200px;*/
   width: 559px;
   height: 346px;
-/*  max-width:50%*/
-  background-position: center;
-  background-size: cover;
-  display: inline-block;
-  margin-top: 51px;
+  position: relative;
+  perspective: 3000px;
+  padding-top: 210px;
 }
 
+.carousel {
 
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.item {
+  display: block;
+  position: absolute;
+  width: 559px;
+  height: 346px;
+  text-align: center;
+/*  opacity: 0.95;*/
+}
+
+.a {
+  transform: rotateY(0deg) translateZ(559px);
+
+}
+.b {
+  transform: rotateY(60deg) translateZ(559px);
+
+}
+.c {
+  transform: rotateY(120deg) translateZ(559px);
+
+}
+.d {
+  transform: rotateY(180deg) translateZ(559px);
+
+}
+.e {
+  transform: rotateY(240deg) translateZ(559px);
+
+} 
+.f {
+  transform: rotateY(300deg) translateZ(559px);
+
+}
+/*------------------------Macbook-----------------------------------------*/
 .macbook{
 
   position: absolute;
-
-  right: 50%;
-  transform: translateX(50%);
-/*  height: inherit;  */
-
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: -50px;
 }
- .macbook img{
+/*------------------------Button-----------------------------------------*/
 
-/*  height: inherit;*/
-
-
- }
-
-
-/*@media (max-device-width: 1024px) {
-  .arrow {
-    width: 20%;
-  }
+.next {
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #262626;
 }
 
-@media (max-width: 768px) {
-  .arrow {
-    width: 10%;
-  }*/
+.prev{
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent; 
+  border-right:20px solid #262626;
+}
+
+.next { 
+  right: 5em; 
+}
+.prev { 
+  left: 5em; 
 }
