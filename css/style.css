@@ -150,8 +150,16 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  padding-top: -50px;
+  z-index: 10;
 }
+
+.macbook img{
+  height: 550px;
+  width: auto;
+  margin-top: -50px;
+}
+
+
 /*------------------------Button-----------------------------------------*/
 
 .next {
